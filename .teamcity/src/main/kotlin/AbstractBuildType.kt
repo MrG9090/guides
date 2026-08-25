@@ -27,9 +27,6 @@ open class AbstractBuildType(init: BuildType.() -> Unit) : BuildType({
 
     params {
         param("env.LC_ALL", "en_US.UTF-8")
-        param("env.GRADLE_CACHE_REMOTE_URL", "%gradle.cache.remote.url%")
-        param("env.GRADLE_CACHE_REMOTE_USERNAME", "%gradle.cache.remote.username%")
-        param("env.GRADLE_CACHE_REMOTE_PASSWORD", "%gradle.cache.remote.password%")
         param("env.DEVELOCITY_ACCESS_KEY", "%ge.gradle.org.access.key%")
     }
 
